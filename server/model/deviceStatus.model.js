@@ -27,6 +27,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     device_group: DataTypes.STRING,
     memo: DataTypes.STRING,
+    version: DataTypes.STRING,
     registrationDate: DataTypes.DATE,
     creationDate: DataTypes.DATE,
     type: DataTypes.STRING,

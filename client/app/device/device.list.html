@@ -9,7 +9,7 @@
           <input type="text"
                  class="form-control"
                  id="deviceId"
-                 placeholder="Device ID"
+                 placeholder="Device"
                  ng-model="parametersFilter.device">
         </div>
 
@@ -19,7 +19,7 @@
           <input type="text"
                  class="form-control"
                  id="deviceGroup"
-                 placeholder="Device Group"
+                 placeholder="Group"
                  ng-model="parametersFilter.device_group">
         </div>
 
@@ -56,14 +56,15 @@
         <th>#</th>
         <th>Group</th>
         <th>Type</th>
+        <th>Version</th>
         <th>Situation</th>
       </thead>
       <tbody>
         <tr ng-show="registeredDevices.data.length == 0">
-          <td class="text-danger text-center" colspan="4">Device not found.</td>
+          <td class="text-danger text-center" colspan="5">Device not found.</td>
         </tr>
         <tr ng-show="isLoading">
-          <td colspan="4" class="text-center">
+          <td colspan="5" class="text-center">
             <img src="assets/images/loading.gif" style="height: 30px">
           </td>
         </tr>
@@ -73,6 +74,7 @@
           <td>{{device.device}}</td>
           <td>{{device.device_group}}</td>
           <td>{{device.type}}</td>
+          <td>{{device.version}}</td>
           <td>
             <registration-status registration='device'></registration-status>
           </td>

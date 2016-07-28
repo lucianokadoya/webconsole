@@ -56,7 +56,7 @@ angular.module('meccanoAdminApp')
 		}
 		// Validate state to apply interval to reload grif of announcements
 		if ($state.current.name === 'main.dash'){
-			$scope.parametersFilter.size = 5;
+			$scope.parametersFilter.size = 9;
 			reloadGrid();
 		}
 

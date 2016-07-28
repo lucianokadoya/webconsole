@@ -9,18 +9,8 @@
           <input type="text"
                  class="form-control"
                  id="deviceId"
-                 placeholder="Device ID"
+                 placeholder="Device"
                  ng-model="parametersFilter.device">
-        </div>
-
-        <!-- Text input search devices by group -->
-        <div class="form-group" >
-          <label class="sr-only" for="deviceGroup">Group</label>
-          <input type="text"
-                 class="form-control"
-                 id="deviceGroup"
-                 placeholder="Device Group"
-                 ng-model="parametersFilter.device_group">
         </div>
 
         <!-- Text input search devices by channel -->
@@ -33,6 +23,16 @@
                  ng-model="parametersFilter.channel">
         </div>
 
+				<!-- Text input search devices by group -->
+				<div class="form-group" >
+				  <label class="sr-only" for="deviceGroup">Group</label>
+				  <input type="text"
+				         class="form-control"
+				         id="deviceGroup"
+				         placeholder="Group"
+				         ng-model="parametersFilter.device_group">
+				</div>
+
         <!-- Text input search devices by sensor -->
         <div class="form-group" >
           <label class="sr-only" for="sensor">Sensor</label>
@@ -43,15 +43,6 @@
                  ng-model="parametersFilter.sensor">
         </div>
 
-        <!-- Text input search devices by sensor -->
-        <div class="form-group" >
-          <label class="sr-only" for="data">Data</label>
-          <input type="text"
-                 class="form-control"
-                 id="data"
-                 placeholder="Data"
-                 ng-model="parametersFilter.data">
-        </div>
 
         <!-- Submit button -->
         <button class="btn btn-default" type="submit" aria-label="Register new device">

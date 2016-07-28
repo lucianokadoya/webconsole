@@ -32,6 +32,7 @@ module.exports = function(sequelize, DataTypes) {
     registrationDate: DataTypes.DATE,
     creationDate: DataTypes.DATE,
     type: DataTypes.STRING,
+    version: DataTypes.STRING,
   }, {
     freezeTableName: true,
     timestamps: false

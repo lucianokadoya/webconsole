@@ -19,6 +19,7 @@ angular.module('meccanoAdminApp')
       * @param status
       * @param device
       * @param group
+      * @param version
       * @param page
       * @param size
       **/
@@ -76,6 +77,7 @@ angular.module('meccanoAdminApp')
       * @param status
       * @param device
       * @param group
+      * @param version
       * @param page
       * @param size
       */
